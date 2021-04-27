@@ -1,0 +1,124 @@
+.navigation {
+    padding: 10px 0;
+    background-color: var(--main-color);
+}
+
+.navigation__unOrderList {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation__listItem {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px;
+    width: 160px;
+    height: 45px;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 5px;
+    border: 1px solid rgb(24, 13, 13);
+    box-shadow: 0 0 10px black;
+    overflow-wrap: normal;
+}
+
+.navigation__Link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    border-radius: 30px;
+}
+
+.navigation__Link:hover {
+    letter-spacing: 2px;
+}
+
+.navigation__Link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00ffb356, transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.4s;
+}
+
+.navigation__listItem:hover .navigation__Link::before {
+    transform: translateX(200%);
+}
+
+.navigation__listItem::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    width: 50px;
+    height: 5px;
+    background-color: var(--navigation-color);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.navigation__listItem:hover::before {
+    bottom: 5px;
+    height: 50%;
+    width: 90%;
+    border-radius: 30px;
+    filter: blur(10px);
+    box-shadow: 0 0 30px var(--navigation-color);
+    z-index: 1;
+}
+
+.navigation__listItem::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4px;
+    width: 50px;
+    height: 5px;
+    background-color: var(--navigation-color);
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.navigation__listItem:hover::after {
+    top: 5px;
+    height: 50%;
+    width: 90%;
+    border-radius: 30px;
+    filter: blur(10px);
+    box-shadow: 0 0 30px var(--navigation-color);
+    z-index: 1;
+}

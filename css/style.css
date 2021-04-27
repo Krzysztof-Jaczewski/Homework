@@ -1,0 +1,69 @@
+/* -------------------------------------------  GENERAL  ---------------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --background-color: rgb(255, 255, 255);
+    --font-color: rgb(5, 4, 4);
+    --main-color: rgb(22, 190, 168);
+    --navigation-color: #00ffb3;
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: var(--font-color);
+    margin: 0;
+}
+
+.image {
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.logo {
+    background-color: var(--main-color);
+    padding-top: 30px;
+}
+.logo__youcode{
+    display: inline-block;
+    color:rgb(194, 128, 4);
+}
+.logo__youcode--special{
+    font-family: 'Open Sans', sans-serif;
+    transform: rotate(10deg);    
+}
+
+.logo__youcode--specialOpposite{
+    color:rgb(5, 4, 2);
+    transform: translate(20px,-7px) rotate(190deg);
+    font-family: 'Open Sans', sans-serif;   
+}
+.logo__youcode--moveLeft{
+    transform: translate(-13px,-3px);
+}
+.logo__youcode--moveRight{
+    transform: translate(34px,-3px) rotate(180deg);
+}
+
+.logo__header {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 40px;
+    transform: translate(-20px,0px)
+}
+
+.footer {
+    background-color: var(--main-color);
+    padding: 20px;
+}

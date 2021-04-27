@@ -1,0 +1,57 @@
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    vertical-align: middle;
+    color: rgb(5, 4, 4);
+    ;
+    background-color: rgb(255, 255, 255);
+    margin: 15px auto;
+}
+
+.table__Headers {
+    background-color: var(--main-color);
+}
+
+.table__Cell {
+    border: 2px solid rgb(7, 10, 20);
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(7, 10, 20), inset 0 0 2px rgb(7, 10, 20);
+    font-size: 16px;
+}
+
+.table__row:nth-child(odd) {
+    background-color: rgb(233, 228, 190);
+}
+
+.table__row:hover {
+    background-color: rgb(168, 164, 134);
+}
+
+.table__row:focus {
+    background-color: rgb(200, 179, 20);
+}
+
+.table__caption {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    width: 90%;
+    border-radius: 20px;
+    margin: 15px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.table__Headers--firstCollumn {
+    position: sticky;
+    left: 0;
+    padding: 5px;
+}
+.table__caption--font {
+    color: rgb(255, 223, 223);
+}

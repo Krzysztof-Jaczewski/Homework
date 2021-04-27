@@ -1,0 +1,41 @@
+.main {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main__sectionHeader {
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 20px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.main__article {
+    padding: 0 5px 0 10px;
+    font-size: 20px;
+}
+
+.main__articleHeader {
+    font-size: 20px;
+    margin: 0;
+    padding: 30px 10px 10px;
+}
+
+.main__articleParagraph {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+
+.main__unOrderList {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 200px;
+}
+
+.main__unOrderListLine {
+    padding: 5px;
+    font-size: 20px;
+}
