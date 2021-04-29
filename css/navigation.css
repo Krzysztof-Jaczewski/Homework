@@ -29,7 +29,7 @@
     overflow-wrap: normal;
 }
 
-.navigation__Link {
+.navigation__link {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,6 +41,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    padding: 10px;
     z-index: 3;
     font-weight: 500;
     letter-spacing: 1px;
@@ -52,11 +54,11 @@
     border-radius: 30px;
 }
 
-.navigation__Link:hover {
+.navigation__link:hover {
     letter-spacing: 2px;
 }
 
-.navigation__Link::before {
+.navigation__link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -68,7 +70,7 @@
     transition: 0.4s;
 }
 
-.navigation__listItem:hover .navigation__Link::before {
+.navigation__listItem:hover .navigation__link::before {
     transform: translateX(200%);
 }
 

@@ -21,6 +21,7 @@ body {
     font-family: 'Merriweather', serif;
     color: var(--font-color);
     margin: 0;
+    transition: 1s;
 }
 
 .image {
