@@ -1,14 +1,24 @@
-let themeButton__indicatorElement = document.querySelector(".js-themeButton__indicator");
-let themeButtonElement = document.querySelector(".js-themeButton");
-let body = document.querySelector("body");
-let table__captionNodeList = document.querySelectorAll(".js-table__caption");
+{
+    const themeButtonElement = document.querySelector(".js-themeButton");
+    
+    const toggleBackgroundColor = () => {
+        const themeButton__indicatorElement = document.querySelector(".js-themeButton__indicator");
+        const body = document.querySelector("body");
 
-themeButtonElement.addEventListener("click", () => {
-    themeButton__indicatorElement.classList.toggle("themeButton--active");
-    themeButton__indicatorElement.classList.toggle("themeButton--background");
-    themeButtonElement.classList.toggle("themeButton--background");
-    body.classList.toggle("themeButton--background");
-    for(let checkbox of table__captionNodeList){
-        checkbox.classList.toggle("table__caption--font");
-    }
-});
+        themeButton__indicatorElement.classList.toggle("themeButton--active");
+        themeButton__indicatorElement.classList.toggle("themeButton--background");
+        themeButtonElement.classList.toggle("themeButton--background");
+        body.classList.toggle("themeButton--background");
+    };
+    const changingFontColotOfTableCaptions = () =>{
+        const table__captionNodeList = document.querySelectorAll(".js-table__caption");
+        for (let checkbox of table__captionNodeList) {
+            checkbox.classList.toggle("table__caption--font");
+        }
+    };
+
+    themeButtonElement.addEventListener("click", () => {
+        toggleBackgroundColor();
+        changingFontColotOfTableCaptions();
+    });
+}
