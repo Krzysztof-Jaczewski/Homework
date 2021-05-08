@@ -1,14 +1,15 @@
 # Homework - My first Page
 ## Contenins: 
+* [Site link](#Site-link)
 * [Navigation](#Navigation)
 * [Aside](#Aside) 
 * [Main content](#Main-content)
 * [Theme Button](#Theme-Button)
 * [Footer](#Footer)
 * [Technologies used](#Technologies-used)
-* [Site link](#Site-link)
 
-
+## Site link
+[Take a closer look yourself](https://krzysztof-jaczewski.github.io/Homework/)
 ## Navigation
 
 Navigation have 3 buttons witch link us to secions we want jumo to, they made with a litle touch of animation
@@ -39,6 +40,3 @@ last element of site which have contakt information
 * Git
 
 I used global variables so its easy to chage color of site is style.css file
-
-## Site link
-[Take a closer look at the website yourself](https://krzysztof-jaczewski.github.io/Homework/)
