@@ -1,6 +1,4 @@
 {
-    const themeButtonElement = document.querySelector(".js-themeButton");
-
     const toggleBackgroundColor = (themeButtonElement) => {
         const themeIndicator = document.querySelector(".js-themeButton__indicator");
         const body = document.querySelector("body");
